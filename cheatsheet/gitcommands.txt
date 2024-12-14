@@ -1,0 +1,33 @@
+git status = to see status of git(eg tracking,modification,stagings etc)
+git log =shows all previous commits
+git log -p =shows what kind of changes are made in commits
+git log -p -3 =shows only 3 changes of log -p
+git add --a = sets into staging area 
+git commit -m "msg"= commits
+rm -rf .git = deletes the entire repostiory from local system
+git add -a -m = skips the staging step
+git diff =differentiates between present working directory and previous commit
+git log --pretty=oneline "shows all commits"
+git log --pretty=short "shows all commits in short without author and commiter"
+git log --pretty=full "show all commits in full with author and commiter"
+git checkout -- filename.txt = its the undo function in git (undos the change in file to make it as per previous commit)
+git checkout --f = it undoes everything back to previous commit  
+git restore --staged text.txt = unstages the staged file text.txt
+git checkout -b "name of branch" = adds a new branch
+git checkout "name of branch" = switch branch
+git branch -d "branch" = deletes a existing branch is it has been merged to master
+git branch -D <branch> = deletes a branch forcefully
+git remote add upstream <copied repo address> = This adds a reference to the main repository from which we can pull the updates.
+git pull upstream main = This should now pull all the changes that have been made to the main repo from merging the pull requests.
+git remote set-url origin "https://github-username@github.com/github-username/github-repository-name.git"
+git config --get remote.origin.url = This gives the current repo url
+git reset --soft HEAD^  = This undoes a commit , changes are kept
+git reset --hard HEAD^  = THis undoes a commit , changes are not kept
+git branch -m master main = changes the name of the master
+git push origin -f = This undoes the  commit in github
+git fetch origin pull/ID/head:BRANCHNAME - to check a PR
+git reset 'HEAD@{1}' - undos the git reset command.
+git cherry-pick <commit> - add a specific commit from one branch to another
+git branch -r = This shows all the braches hidden after clone
+
+ 
